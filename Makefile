@@ -5,7 +5,7 @@ ifeq ($(OS),Windows_NT)
 	PYTHON_VENV_ACTIVATE:=$(PYTHON_VENV_DIR)\Scripts\activate
 else
 	SHELL:=/bin/bash
-    PYTHON_VENV_ACTIVATE:=source $(PYTHON_VENV_DIR)/bin/activate
+	PYTHON_VENV_ACTIVATE:=source $(PYTHON_VENV_DIR)/bin/activate
 endif
 
 all: run
